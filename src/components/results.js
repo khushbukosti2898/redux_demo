@@ -30,7 +30,7 @@ class Result extends React.Component {
       }
     }
   
-    votesAngularInPercentStyle() {
+    /* votesAngularInPercentStyle() {
       return {
         width: this.votesAngularInPercent()+'%'
       }
@@ -46,27 +46,27 @@ class Result extends React.Component {
       return {
         width: this.votesVuejsInPercent()+'%'
       }
-    }
+    } */
   
     render() {
       return (
         <div>
-          <span className="label label-danger">Angular: {this.votesAngularInPercent().toFixed(2) + '%'}</span>
-          <div className="progress progress-striped active">
+          <span className="label label-danger">Angular: {this.votesAngularInPercent().toFixed(2) + '%'}</span><br/>
+          {/* <div className="progress progress-striped active">
             <div className="progress-bar progress-bar-danger" style={this.votesAngularInPercentStyle()}>
             </div>
-          </div>
+          </div> */}
 
-          <span className="label label-info">React: {this.votesReactInPercent().toFixed(2) + '%'}</span>
-          <div className="progress progress-striped active">
+          <span className="label label-info">React: {this.votesReactInPercent().toFixed(2) + '%'}</span><br/>
+          {/* <div className="progress progress-striped active">
             <div className="progress-bar progress-bar-info" style={this.votesReactInPercentStyle()}>
             </div>
-          </div>
-          <span className="label label-success">Vue.js: {this.votesVuejsInPercent().toFixed(2) + '%'}</span>
-          <div className="progress progress-striped active">
+          </div> */}
+          <span className="label label-success">Vue.js: {this.votesVuejsInPercent().toFixed(2) + '%'}</span><br/>
+          {/* <div className="progress progress-striped active">
             <div className="progress-bar progress-bar-success" style={this.votesVuejsInPercentStyle()}>
             </div>
-          </div>
+          </div> */}
         </div>
       )
     }

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
-import reducer from './reducers/index';
+import reducer from './reducers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Counter from './counter'
 // import {Provider} from 'react-redux'
@@ -16,7 +16,9 @@ function render() {
     ReactDOM.render(<div><App store={store} /><hr /><Counter store={store} /> </div>,
         document.getElementById('root'));
 }
-store.subscribe(render)
+
+store.subscribe(render);
+
 render();
 
 /* ReactDOM.render(

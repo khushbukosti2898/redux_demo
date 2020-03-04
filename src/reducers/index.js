@@ -7,24 +7,6 @@ const initialState = {
 
 const myReducer = (state = initialState, action) => {
     const newState = { ...state };
-
-    /* if(action.type=== 'REACT_VOTE'){
-        console.log("react")
-        newState.react += 1;
-    }
-
-    if(action.type=== 'ANGULAR_VOTE'){
-        console.log("angular")
-        newState.angular += 1; 
-    }
-
-    if(action.type=== 'VUE_VOTE'){
-        console.log("react")
-        newState.vue += 1; 
-    }
-
-    return newState; */
-
     switch (action.type) {
         case 'REACT_VOTE':
             newState.react += 1;
